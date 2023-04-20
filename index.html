@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta keyword="run for earth, registration, river rehabilitation">
+    <meta description="A 3k run alongside the candidates of Miss Philippines Earth 2015 to aid the Calumpang River Rehabilitation">
+    <title>Company X</title>
+    
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<body>
+<header>
+  <div class="wrap ">
+    <div class="logo-nav-containter elm-center d-flex flex-row">
+      <div class="logo">
+        <a href="#"><img src="./images/company-logo.png" alt="Run For Earth"></a>
+      </div>
+      <div class="nav-wrap d-flex flex-v-center">
+        <button class="mbnav">
+          <div id="ham">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Run Information</a>
+          <a href="#">Registration</a>
+          <a href="#">Contact Us</a>
+        </nav>
+      </div>
+    </div>    
+  </div>
+  <div class="mnav-list">
+
+  </div>
+</header>
+<main>
+  <section class="top">
+    <div class="wrap elm-center">
+      <div class="hero elm-center">
+        <img src="./images/hero-banner.png" class="elm-block elm-center">
+        <p>A 3K run alongside the candidates of Miss Philippines Earth 2015 to aid the Calumpang River Rehabilitation</p>
+
+        <p> APRIL 25, 2015 | Assembly time: 5:00 AM | SM City Batangas Parking Grounds</p>
+        <p>Registration fee: Php500 inclusive of race kit with shirt</p>
+        <button id="register" class="elm-center elm-block">Register now!</button>
+      </div>
+    </div>
+    <div class="pattern water">      
+      <div class="decor plant d-flex flex-row">
+        <img src="./images/plant.png" alt="plant">
+        <img src="./images/plant.png" alt="plant">
+      </div>
+    </div>
+  </section >
+  <section class="mid bg-blue" style="padding-bottom: 80px;">
+    <div class="col-md-6" style="margin: 0 auto">
+      <div class="content">
+        <img src="./images/sign-up.png" class="elm-block elm-center">
+        <p>Etiam sed nisl neque. Nam eget metus id nunc dignissim molestie tempor id metus. Nam eget diam lacus. Mauris condimentum placerat facilisis. Quisque iaculis quam ac volutpat accumsan. Morbi malesuada ac lorem vitae vulputate. Etiam ultrices aliquet urna, vitae viverra dui posuere sed. Nulla feugiat consectetur massa, at scelerisque quam mattis quis. Nam dolor lacus, ultrices vitae lectus sed, tristique mattis quam. Morbi in nulla a est vestibulum rutrum. Quisque commodo libero nulla, quis interdum ex semper sed. Donec consectetur sem at elit ullamcorper, quis interdum nisi dictum. Nunc in ornare lacus, quis ullamcorper diam. Pellentesque ultricies leo sed odio ullamcorper rhoncus. Duis suscipit efficitur felis, vel pellentesque sem vehicula eget.</p>
+      </div>
+      <form id="registerForm" action="register.php" method="post">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-4">
+                    <input type="text" class="validate-input form-control" placeholder="First name" name="firstName" required>
+                  </div>
+                  <div class="col-md-4">
+                    <input type="text" class="validate-input form-control" placeholder="Last name" name="lastName" required>
+                  </div>
+                  <div class="col-md-4">
+                      <select class="form-select" name="gender" required>
+                          <option disabled selected hidden value="">select gender</option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>                                    
+                      </select>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="form-group">                
+                      <input type="text" placeholder="Complete Address" class="form-control" id="address1" name="address1" required/>
+                    </div>
+              </div>
+              <div class="row">
+                  <div class="form-group">                
+                      <input type="text" class="form-control" id="address2" name="address2" required placeholder="Address 2"/>
+                    </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">                  
+                    <input placeholder="Birthday" class="form-control" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="birthday" name="birthday" required/>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="number" class="form-control" placeholder="Contact Number" id="contactNumber" name="contactNumber">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6">
+                    <input type="email" class="form-control" placeholder="Email Address" name="email" required>
+                  </div>
+                  <div class="col-md-6">
+                    <select  class="form-select"  name="size" placeholder="Shirt size" required>
+                      <option disabled selected hidden value="">select shirt size</option>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option> 
+                      <option value="XL">XL</option>                
+                    </select>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-6 txt-fff add-more">
+                    <button>
+                      <svg class="add-sign" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13 0H9V9H0V13H9V22H13V13H22V9H13V0Z" fill="#fff"/>
+                      </svg>                        
+                    </button> Add more particpants
+                  </div>
+                  <div class="col-md-6">
+                      <div class="toc d-flex flex-v-center">
+                          <input class="form-check-input mt-0 mr-3" type="checkbox" id="toc">
+                          <u class="txt-fff">I have read and understand the Terms and Conditions</u>
+                      </div> 
+                    
+                    
+                  </div>
+              </div>
+          </div>
+          <input id="submit" type="submit" disabled class="btn btn-primary bg-green" />
+      </form>
+  </div>
+  </section>  
+</main>
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script> -->
+<script src="./js/js.js"></script>
+</body>
+</html>
